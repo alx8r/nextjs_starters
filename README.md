@@ -12,108 +12,22 @@
 6. Would you like to use App Router? (recommended) … (Yes)
 7. Would you like to customize the default import alias? … (No)
 
-# Settup project
+# Settup project & lint
+
+[nextjs_lint_starter](https://github.com/alx8r/nextjs_lint_starter)
+
+Check rules in **eslintrc** and add missing to your project
+
+# Settup storybook
 
 ```bash
-  node -v > .nvmrc
-```
-
-```bash
-  echo engine-strict=true > .npmrc
-```
-
-_Open package.json and past “engines” before “scripts”:_
-
-```
-"engines": {
-  "node": ">=<your_version>",
-  "yarn": ">=<your_version>",
-  "npm": "please-use-yarn"
-},
-```
-
-# Eslint & Prettier
-
-```bash
-  echo > .eslintrc & echo > .prettierrc & echo > .prettierignore & echo > .eslintignore
+  npx storybook@latest init
 ```
 
 ```bash
-  yarn add -D eslint-config-airbnb eslint-config-airbnb-typescript
+  rm -rf src/storybook
 ```
 
-```bash
-  yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
+**Check src/components/Button folder**
 
-```bash
-  yarn add -D prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-react
-```
 
-**.eslintrc**
-
-```
-{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "next/core-web-vitals",
-    "airbnb",
-    "airbnb-typescript",
-    "prettier"
-  ],
-  "plugins": ["prettier"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "rules": {
-    "prettier/prettier": "error"
-  }
-}
-```
-
-**.prettierrc**
-
-```
-{
-  "arrowParens": "always",
-  "bracketSameLine": false,
-  "bracketSpacing": true,
-  "singleQuote": true,
-  "quoteProps": "as-needed",
-  "semi": true,
-  "printWidth": 100,
-  "useTabs": false,
-  "tabWidth": 2,
-  "trailingComma": "es5"
-}
-```
-
-**.prettierignore & .eslintignore**
-
-```
-node_modules/
-```
-
-_Open package.json and past to “scripts”:_
-
-```
-  "lint": "next lint",
-  "prettier": "prettier . --write"
-```
-
-# Husky
-
-```bash
-  yarn add -D husky
-```
-
-```bash
-  npx husky install
-```
-
-```bash
-  npx husky add .husky/pre-commit "yarn lint"
-```
