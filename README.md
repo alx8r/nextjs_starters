@@ -25,7 +25,11 @@ Check rules in **eslintrc** and add missing to your project
 ```
 
 ```bash
-  mkdir ./src/store & cd ./src/store & echo > index.ts & echo > hooks.ts & echo > store.ts
+  mkdir ./src/store
+```
+
+```bash
+  cd ./src/store & echo > index.ts & echo > hooks.ts & echo > store.ts & echo > provider.tsx
 ```
 
 Just copy **store** folder to your project
