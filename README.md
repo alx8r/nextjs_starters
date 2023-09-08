@@ -7,6 +7,7 @@ Each starter is in its own branch and is a separate program.
 2. redux - branch with redux configuration
 3. storybook - branch with storybook setting
 4. i18n - branch with internationalization settings
+5. docker - branch with docker files and configuration
 
 
 *Don't merge branches! Since these are all different projects!*
