@@ -1,7 +1,7 @@
 # Create next.js application
 
 ```bash
-  npx create-next-app@latest
+npx create-next-app@latest
 ```
 
 1. What is your project named? … eslint-prettier-husky-starter
@@ -15,11 +15,11 @@
 # Settup project
 
 ```bash
-  node -v > .nvmrc
+node -v > .nvmrc
 ```
 
 ```bash
-  echo engine-strict=true > .npmrc
+echo engine-strict=true > .npmrc
 ```
 
 _Open package.json and past “engines” before “scripts”:_
@@ -35,19 +35,19 @@ _Open package.json and past “engines” before “scripts”:_
 # Eslint & Prettier
 
 ```bash
-  echo > .eslintrc & echo > .prettierrc & echo > .prettierignore & echo > .eslintignore
+echo > .eslintrc & echo > .prettierrc & echo > .prettierignore & echo > .eslintignore
 ```
 
 ```bash
-  yarn add -D eslint-config-airbnb eslint-config-airbnb-typescript
+yarn add -D eslint-config-airbnb eslint-config-airbnb-typescript
 ```
 
 ```bash
-  yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
+yarn add -D eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 ```bash
-  yarn add -D prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-react
+yarn add -D prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-react
 ```
 
 **.eslintrc**
@@ -95,6 +95,7 @@ _Open package.json and past “engines” before “scripts”:_
 
 ```
 node_modules/
+*.config.js
 ```
 
 _Open package.json and past to “scripts”:_
@@ -107,13 +108,13 @@ _Open package.json and past to “scripts”:_
 # Husky
 
 ```bash
-  yarn add -D husky
+yarn add -D husky
 ```
 
 ```bash
-  npx husky install
+npx husky install
 ```
 
 ```bash
-  npx husky add .husky/pre-commit "yarn lint"
+npx husky add .husky/pre-commit "yarn lint"
 ```
