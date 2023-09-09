@@ -23,13 +23,13 @@ Check rules in **eslintrc** and add missing to your project
 https://www.youtube.com/watch?v=pKolfZFW3gs&ab_channel=TuomoKankaanp%C3%A4%C3%A4
 
 ```bash
-  yarn add  next-intl@3.0.0-beta.9
+  yarn add next-intl@3.0.0-beta.9
 ```
 
 _Check last version on website [next-intl](https://next-intl-docs.vercel.app/docs/getting-started/app-router-server-components)_
 
 ```bash
-  mkdir src/app/[locale] && mkdir src/intl && mkdir src/intl/locales
+  mkdir 'src/app/[locale]' && mkdir src/intl && mkdir src/intl/locales
 ```
 
 ```bash
