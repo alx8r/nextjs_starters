@@ -25,7 +25,7 @@ Check rules in **eslintrc** and add missing to your project
 ```
 
 ```bash
-  rm -rf src/storybook
+  rm -rf src/stories
 ```
 
 **Check src/components/Button folder**
