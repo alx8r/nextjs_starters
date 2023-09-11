@@ -1,13 +1,31 @@
-# About repository
+# Create next.js application
 
-This repository contains all the starters for nextjs. 
-Each starter is in its own branch and is a separate program.
+```bash
+  npx create-next-app@latest
+```
 
-1. lint - branch with eslite, prettier and husky settings
-2. redux - branch with redux configuration
-3. storybook - branch with storybook setting
-4. i18n - branch with internationalization settings
-5. docker - branch with docker files and configuration
+1. What is your project named? … eslint-prettier-husky-starter
+2. Would you like to use TypeScript? … (Yes)
+3. Would you like to use ESLint? … (Yes)
+4. Would you like to use Tailwind CSS? … (No)
+5. Would you like to use `src/` directory? … (Yes)
+6. Would you like to use App Router? (recommended) … (Yes)
+7. Would you like to customize the default import alias? … (No)
 
+# Settup project & lint
 
-*Don't merge branches! Since these are all different projects!*
+[nextjs_lint_starter](https://github.com/alx8r/nextjs_lint_starter)
+
+Check rules in **eslintrc** and add missing to your project
+
+# Settup validation
+
+```bash
+yarn add react-hook-form
+```
+
+```bash
+yarn add @hookform/resolvers yup
+```
+
+Just check src/app/page.tsx
